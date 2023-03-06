@@ -1,7 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
-
+import HelpModal from "./HelpModal";
+import {BiHelpCircle} from 'react-icons/bi'
 export default function CompA7() {
   const A7 = [
     {
@@ -119,7 +121,15 @@ export default function CompA7() {
     ]
     
   const [controlerA7, setControlerA7] = useState(A7);
-  const [show, setShow] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
+  const [show, setShow] = useState(true);
+  const [data,setdata] =useState({})
+ 
+  const handleClose = () => setModalShow(false);
+  const handleShow = (el) => {
+    setModalShow(true)
+    setdata(el)
+  };
 
   const handleShowHide = () => {
     setShow(!show);
@@ -187,14 +197,14 @@ export default function CompA7() {
   };
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-lg container-fluid">
         {/* ***************Begin::Controller For A7****************** */}
         <div className="overflow-hidden">
           <div onClick={handleShowHide} className="mainHeading">
             7 Context of the organisation
           </div>
           <div className={`${show ? "d-none" : "d-block"}`}>
-            <div className={`table-resposive overflow-auto`}>
+            <div className={`table-resposive overflow-auto bg-graye`}>
               {controlerA7.map((el, index) => (
                 <table key={index}>
                   <tr className={`${el.color?'green':''}`}>
@@ -206,7 +216,7 @@ export default function CompA7() {
 
                     {/************Begin::Controller Name :***********  */}
                     <td>
-                      <p className="overflow-hidden" style={{ width: "9rem" }}>
+                      <p className="overflow-hidden" style={{ width: "16rem" }}>
                         {el.controller}
                       </p>
                     </td>
@@ -229,8 +239,8 @@ export default function CompA7() {
                     </td>
                     <td>
                       <textarea
-                        style={{ height: "50px" }}
-                        height="40%"
+                         className="mt-3"
+                         style={{ height: "40px", width:'17rem' }}
                         value={controlerA7[index].description}
                         name="description"
                         form="usrform"
@@ -270,6 +280,14 @@ export default function CompA7() {
                         Submit
                       </button>
                     </td>
+                    <td>
+                    <span onClick={()=>handleShow(el?.help_data)}>
+                      <BiHelpCircle 
+                      title="help"
+                      className="ico2"
+                     />
+                    </span>
+                    </td>
                   </tr>
                 </table>
               ))}
@@ -278,6 +296,14 @@ export default function CompA7() {
         </div>
         {/* ***************End::Controller For A7********************** */}
       </div>
+          {/******************* Help Modal ************************** */}
+    <Modal show={modalShow} size='lg' onHide={handleClose} animation={false}>
+        <Modal.Header closeButton>
+        </Modal.Header>
+        <Modal.Body>
+          <HelpModal data={data}/>
+        </Modal.Body>
+      </Modal>
     </>
   );
 }

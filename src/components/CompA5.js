@@ -1,7 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
-
+import HelpModal from "./HelpModal";
+import {BiHelpCircle} from 'react-icons/bi'
 export default function CompA5() {
   const A5 = [
     {
@@ -11,6 +13,27 @@ export default function CompA5() {
       description: "",
       files: [],
       color: false,
+      help: {
+        td_a: "Control type",
+        td_b: "Information security properties",
+        td_c: "Cybersecurity concept",
+        td_d: "Operational capabilities",
+        td_e: "Security_domain",
+      },
+      help_data: {
+        td_a: "Prevention",
+        td_b: {
+          point_a: "confidentiality",
+          ponit_b: "Integrity",
+          point_c: "Avalibilty",
+        },
+        td_c: "Protected",
+        td_d: {
+          point_a: "Application_security",
+          ponit_b: "System_and_net-work_security",
+        },
+        td_e: "Protection",
+      },
     },
     {
       srNo: 5.2,
@@ -304,7 +327,16 @@ export default function CompA5() {
     },
   ];
   const [controlerA5, setControlerA5] = useState(A5);
-  const [show, setShow] = useState(false);
+  console.log('controlerA5',controlerA5)
+  const [modalShow, setModalShow] = useState(false);
+  const [show, setShow] = useState(true);
+  const [data,setdata] =useState({})
+ 
+  const handleClose = () => setModalShow(false);
+  const handleShow = (el) => {
+    setModalShow(true)
+    setdata(el)
+  };
 
   const handleShowHide = () => {
     setShow(!show);
@@ -355,10 +387,10 @@ export default function CompA5() {
         let copArr = [...controlerA5];
         let obj = copArr[index];
         obj.color = true;
-        obj.condition = '';
-        obj.description = '';
+        obj.condition = "";
+        obj.description = "";
         obj.files = [];
-        copArr[index]=obj
+        copArr[index] = obj;
         setControlerA5(copArr);
         toast.success("Successfully Added");
         console.log(
@@ -370,19 +402,20 @@ export default function CompA5() {
         console.log("err", err);
       });
   };
+
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-lg container-fluid">
         {/* ***************Begin::Controller For A5****************** */}
         <div className="overflow-hidden">
           <div onClick={handleShowHide} className="mainHeading">
             5 Context of the organisation
           </div>
           <div className={`${show ? "d-none" : "d-block"}`}>
-            <div className={`table-resposive overflow-auto`}>
+            <div className={`table-resposive overflow-auto bg-graye`}>
               {controlerA5.map((el, index) => (
                 <table key={index}>
-                  <tr className={`${el.color?'green':''}`}>
+                  <tr className={`${el.color ? "green" : ""}`}>
                     {/************Begin:: Sr No :***********  */}
                     <td>
                       <p style={{ width: "1rem" }}>{el.srNo}</p>
@@ -391,7 +424,7 @@ export default function CompA5() {
 
                     {/************Begin::Controller Name :***********  */}
                     <td>
-                      <p className="overflow-hidden" style={{ width: "9rem" }}>
+                      <p className="overflow-hidden" style={{ width: "16rem" }}>
                         {el.controller}
                       </p>
                     </td>
@@ -414,8 +447,8 @@ export default function CompA5() {
                     </td>
                     <td>
                       <textarea
-                        style={{ height: "50px" }}
-                        height="40%"
+                      className="mt-3"
+                        style={{ height: "40px", width:'17rem' }}
                         value={controlerA5[index].description}
                         name="description"
                         form="usrform"
@@ -455,6 +488,14 @@ export default function CompA5() {
                         Submit
                       </button>
                     </td>
+                    <td>
+                    <span onClick={()=>handleShow(el.help_data)}>
+                      <BiHelpCircle 
+                      title="help"
+                      className="ico2"
+                     />
+                    </span>
+                    </td>
                   </tr>
                 </table>
               ))}
@@ -463,6 +504,15 @@ export default function CompA5() {
         </div>
         {/* ***************End::Controller For A5********************** */}
       </div>
+
+    {/******************* Help Modal ************************** */}
+    <Modal show={modalShow} size='lg' onHide={handleClose} animation={false}>
+        <Modal.Header closeButton>
+        </Modal.Header>
+        <Modal.Body>
+          <HelpModal data={data}/>
+        </Modal.Body>
+      </Modal>
     </>
   );
 }
