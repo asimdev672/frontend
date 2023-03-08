@@ -5,14 +5,33 @@ import { toast } from "react-toastify";
 import HelpModal from "./HelpModal";
 import {BiHelpCircle} from 'react-icons/bi'
 export default function CompA7() {
-  const A7 = [
+  const A7 =  [
     {
     srNo: 7.1,
     controller: 'Physical security perimeters',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
+    color: false,
+    help_data: {
+    td_a:[ {
+        point_a: "#Preventive",
+    }],
+    td_b: [{
+      point_a: "#confidentiality"},
+      {ponit_a: "#Integrity"},
+     { ponit_a: "#Availibilty"},
+    ],
+    td_c: [{
+        point_a: "#Protect",
+    }],
+    td_d: [{
+    point_a: "#Physical_security",
+    }],
+    td_e:[ {
+        point_a: "Protection",
+    }],
+    },
     },
     {
     srNo: 7.2,
@@ -20,105 +39,360 @@ export default function CompA7() {
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a:[ {
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+            point_a: "#Protect",
+        }],
+        td_d:[ {
+            point_a: "#Physical_security"},
+            {point_a: "#Identity_and_Access_Management"},
+        ],
+        td_e:[ {
+            point_a: "Protection",
+        }],
+        },
+        },
     {
     srNo: 7.3,
     controller: 'Securing offices, rooms and facilities',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a: [{
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+            point_a: "#Protect",
+        }],
+        td_d: [{
+            point_a: "#Physical_security"},
+            {ponit_a: "#Asset_management"},
+        ],
+        td_e: [{
+            point_a: "Protection",
+        }],
+        },
+        },
     {
     srNo: 7.4,
     controller: 'Physical security monitoring',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a:[ {
+            point_a: "#Preventive"},
+           { ponit_a: "#Detective"},
+        ],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+            point_a: "#Protect"},
+            {ponit_a: "#Detect"},
+        ],
+        td_d:[ {
+            point_a: "#Physical_security",
+        }],
+        td_e:[ {
+            point_a: "Protection"},
+            {ponit_a: "Defence"},
+        ],
+        },
+        },
     {
     srNo: 7.5,
     controller: 'Protecting against physical and environmental threats',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a:[ {
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+            point_a: "#Protect",
+        }],
+        td_d:[ {
+            point_a: "#Physical_security",
+        }],
+        td_e: [{
+            point_a: "Protection",
+        }],
+        },
+        },
     {
     srNo: 7.6,
     controller: 'Working in secure areas',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a:[ {
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+            point_a: "#Protect",
+        }],
+        td_d:[ {
+            point_a: "#Physical_security",
+        }],
+        td_e:[ {
+            point_a: "Protection",
+        }],
+        },
+        },
     {
     srNo: 7.7,
     controller: 'Clear desk and clear screen',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a: [{
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+        point_a: "#confidentiality",
+        }],
+        td_c:[ {
+            point_a: "#Protect",
+        }],
+        td_d: [{
+            point_a: "#Physical_security",
+        }],
+        td_e:[ {
+            point_a: "Protection",
+        }],
+        },
+        },
     {
     srNo: 7.8,
     controller: 'Equipment siting and protection',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a: [{
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+            point_a: "#Protect",
+        }],
+        td_d: [{
+            point_a: "#Physical_security"},
+            {ponit_a: "#Asset_management"},
+        ],
+        td_e: [{
+            point_a: "Protection",
+        }],
+        },
+        },
     {
     srNo: 7.9,
     controller: 'Security of assets off-premises',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a:[ {
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+            point_a: "#Protect",
+        }],
+        td_d:[ {
+            point_a: "#Physical_security"},
+            {ponit_a: "#Asset_management"},
+        ],
+        td_e: [{
+            point_a: "Protection",
+        }],
+        },
+        },
     {
     srNo: 7.10,
     controller: 'Storage media',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a:[ {
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+            point_a: "#Protect",
+        }],
+        td_d: [{
+            point_a: "#Physical_security"},
+            {ponit_a: "#Asset_management"},
+        ],
+        td_e: [{
+            point_a: "Protection",
+        }],
+        },
+        },
     {
     srNo: 7.11,
     controller: 'Supporting utilities',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a: [{
+            point_a: "#Preventive"},
+           { ponit_a: "#Detective"},
+        ],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+        ],
+        td_c:[ {
+            point_a: "#Protect"},
+            {point_a: "#Detect"},
+        ],
+        td_d: [{
+            point_a: "#Physical_security",
+        }],
+        td_e:[ {
+            point_a: "Protection",
+        }],
+        },
+        },
     {
     srNo: 7.12,
     controller: 'Cabling security',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a:[ {
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+        ],
+        td_c: [{
+            point_a: "#Protect",
+        }],
+        td_d: [{
+            point_a: "#Physical_security",
+        }],
+        td_e:[ {
+            point_a: "Protection",
+        }],
+        },
+        },
     {
     srNo: 7.13,
     controller: 'Equipment maintenance',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a: [{
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+            point_a: "#Protect",
+        }],
+        td_d: [{
+            point_a: "#Physical_security"},
+            {ponit_a: "#Asset_management"},
+        ],
+        td_e:[ {
+            point_a: "Protection"},
+           { point_a: "Resilience"},
+        ],
+        },
+        },
     {
     srNo: 7.14,
     controller: 'Secure disposal or re-use of equipment',
     condition: ' ',
     description: ' ',
     files: [],
-    color:false
-    },
+    color: false,
+    help_data: {
+        td_a:[ {
+            point_a: "#Preventive",
+        }],
+        td_b: [{
+        point_a: "#confidentiality",
+        }],
+        td_c: [{
+            point_a: "#Protect",
+        }],
+        td_d: [{
+            point_a: "#Physical_security"},
+            {ponit_a: "#Asset_management"},
+        ],
+        td_e:[ {
+            point_a: "Protection",
+        }],
+        },
+        },
     ]
+    
     
   const [controlerA7, setControlerA7] = useState(A7);
   const [modalShow, setModalShow] = useState(false);
@@ -298,7 +572,7 @@ export default function CompA7() {
       </div>
           {/******************* Help Modal ************************** */}
     <Modal show={modalShow} size='lg' onHide={handleClose} animation={false}>
-        <Modal.Header closeButton>
+        <Modal.Header className="border-0" closeButton>
         </Modal.Header>
         <Modal.Body>
           <HelpModal data={data}/>

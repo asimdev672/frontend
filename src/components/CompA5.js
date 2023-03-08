@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
 import HelpModal from "./HelpModal";
-import {BiHelpCircle} from 'react-icons/bi'
+import { BiHelpCircle } from "react-icons/bi";
+import db from "./db.json";
 export default function CompA5() {
+  console.log("db", db);
   const A5 = [
     {
       srNo: 5.1,
@@ -13,26 +15,27 @@ export default function CompA5() {
       description: "",
       files: [],
       color: false,
-      help: {
-        td_a: "Control type",
-        td_b: "Information security properties",
-        td_c: "Cybersecurity concept",
-        td_d: "Operational capabilities",
-        td_e: "Security_domain",
-      },
       help_data: {
-        td_a: "Prevention",
-        td_b: {
-          point_a: "confidentiality",
-          ponit_b: "Integrity",
-          point_c: "Avalibilty",
-        },
-        td_c: "Protected",
-        td_d: {
-          point_a: "Application_security",
-          ponit_b: "System_and_net-work_security",
-        },
-        td_e: "Protection",
+        td_a: [
+          {
+            point_a: "#Prevention",
+          },
+        ],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"}
+        ],
+        td_c: [{
+          point_a: "#Identify",
+        }],
+        td_d: [{
+          point_a: "#Governance",
+        }],
+        td_e: [{
+          point_a: "Governance_and_Ecosystem"},
+         { ponit_a: "#Resilience"},
+        ],
       },
     },
     {
@@ -42,30 +45,113 @@ export default function CompA5() {
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: {
+          point_a: "#Prevention",
+        },
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+          {ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Identify",
+        }],
+        td_d:[ {
+          point_a: "#Governance",
+        }],
+        td_e: [{
+          point_a: "Governance_and_Ecosystem"},
+          {ponit_a: "#Resilience"},
+        ],
+      },
     },
     {
       srNo: 5.3,
-      controller: "Segregation of duties Control",
+      controller: "Segregation of duties",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Prevention",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+          {ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Protect",
+        }],
+        td_d: [{
+          point_a: "#Governance"},
+          {ponit_a: "#Identity_and_access_management"},
+        ],
+        td_e: [{
+          point_a: "#Governance_and_Ecosystem",
+        }],
+      },
     },
     {
       srNo: 5.4,
-      controller: "Management responsibilities Control",
+      controller: "Management responsibilities",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Prevention",
+        }],
+        td_b:[ {
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+          {ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Identify",
+        }],
+        td_d: [{
+          point_a: "#Governance",
+        }],
+        td_e: [{
+          point_a: "# Governance_and_Ecosystem",
+        }],
+      },
     },
     {
       srNo: 5.5,
-      controller: " Contact with authorities Control",
+      controller: "Contact with authorities",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive"},
+          {ponit_a: "#Corrective"},
+        ],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Identify"},
+          {ponit_a: "#Protect"},
+          {ponit_a: "#Respond"},
+          {point_d: "#Recover"},
+        ],
+        td_d: [{
+          point_a: "#Governance",
+        }],
+        td_e:[ {
+          point_a: "#Defence"},
+          {ponit_a: "#Resilience "},
+        ],
+      },
     },
     {
       srNo: 5.6,
@@ -74,14 +160,60 @@ export default function CompA5() {
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive"},
+          {ponit_a: "#Corrective"},
+        ],
+        td_b:[ {
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          ponit_a: "#Protect"},
+          {ponit_a: "#Respond"},
+          {ponit_a: "#Recover"},
+        ],
+        td_d: [{
+          point_a: "#Governance",
+        }],
+        td_e:[ {
+          point_a: "#Defence",
+        }],
+      },
     },
     {
       srNo: 5.7,
-      controller: "Threat intelligence Control",
+      controller: "Threat intelligence",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive"},
+         { ponit_a: "#Detective"},
+         { ponit_a: "#Corrective"},
+        ],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+          {ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          ponit_a: "#Identify"},
+         { ponit_a: "#Detect"},
+          {ponit_a: "#Respond "},
+        ],
+        td_d: [{
+          point_a: "#Threat_and_vulnerability_management",
+        }],
+        td_e: [{
+          point_a: "#Defence"},
+         { ponit_a: "#Resilience"},
+        ],
+      },
     },
     {
       srNo: 5.8,
@@ -90,14 +222,55 @@ export default function CompA5() {
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+          {ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          ponit_a: "#Identify"},
+          {ponit_a: "#Protect"},
+        ],
+        td_d: [{
+          point_a: "#Governance",
+        }],
+        td_e:[ {
+          point_a: "#Governance_and_Ecosystem "},
+         { ponit_a: "#Protection"},
+        ],
+      },
     },
     {
       srNo: 5.9,
-      controller: " Inventory of information and other associated assets",
+      controller: "Inventory of information and other associated assets",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Identify",
+        }],
+        td_d:[ {
+          point_a: "#Asset_management",
+        }],
+        td_e:[ {
+          point_a: "#Governance_and_Ecosystem "},
+          {ponit_a: "#Protection"},
+        ],
+      },
     },
     {
       srNo: 5.1,
@@ -106,216 +279,755 @@ export default function CompA5() {
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b:[ {
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+          {ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Identify",
+        }],
+        td_d: [{
+          point_a: "#Asset Management"},
+         { ponit_a: "#Information_protection"},
+        ],
+        td_e: [{
+          point_a: "#Governance_and_Ecosystem "},
+          {ponit_a: "#Protection"},
+        ],
+      },
     },
     {
       srNo: 5.11,
-      controller: "Return of assets, Classification of information",
+      controller: "Return of assets",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+         { ponit_a: "#Integrity"},
+          {ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Protect",
+        }],
+        td_d:[ {
+          point_a: "#Asset Management",
+        }],
+        td_e:[ {
+          point_a: "#Protection",
+        }],
+      },
     },
     {
       srNo: 5.12,
-      controller: " Labelling of information",
+      controller: "Classification of information",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Identify",
+        }],
+        td_d: [{
+          point_a: "#Information_protection",
+        }],
+        td_e:[ {
+          point_a: "# Protection"},
+          {ponit_a: "#Defence"},
+        ],
+      },
     },
     {
       srNo: 5.13,
-      controller: "Information transfer, Access control",
+      controller: "Labelling of information",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+         { ponit_a: "#Integrity"},
+          {ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Identify",
+        }],
+        td_d:[ {
+          point_a: "#Information_protection",
+        }],
+        td_e:[ {
+          point_a: "#Defence"},
+          {ponit_a: "#Protection "},
+        ],
+      },
     },
     {
       srNo: 5.14,
+      controller: "Information transfer",
+      condition: "",
+      description: "",
+      files: [],
+      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Protect",
+        }],
+        td_d: [{
+          point_a: "#Asset Management"},
+          {ponit_a: "#Information_Protection "},
+        ],
+        td_e: [{
+          point_a: "#Protection",
+        }],
+      },
+    },
+    {
+      srNo: 5.15,
+      controller: "Access control",
+      condition: "",
+      description: "",
+      files: [],
+      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b:[ {
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Protect",
+        }],
+        td_d:[ {
+          point_a: "#Identity_and_access_management",
+        }],
+        td_e: [{
+          point_a: "#Protection",
+        }],
+      },
+    },
+    {
+      srNo: 5.16,
       controller: "Identity management",
       condition: "",
       description: "",
       files: [],
       color: false,
-    },
-    {
-      srNo: 5.15,
-      controller: "Authentication information",
-      condition: "",
-      description: "",
-      files: [],
-      color: false,
-    },
-    {
-      srNo: 5.16,
-      controller: "Authentication information",
-      condition: "",
-      description: "",
-      files: [],
-      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Protect",
+        }],
+        td_d:[ {
+          point_a: "#Identity_and_access_management",
+        }],
+        td_e: [{
+          point_a: "#Protection",
+        }],
+      },
     },
     {
       srNo: 5.17,
+      controller: "Authentication information",
+      condition: "",
+      description: "",
+      files: [],
+      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Protect",
+        }],
+        td_d:[ {
+          point_a: "#Identity_and_access_management",
+        }],
+        td_e:[ {
+          point_a: "#Protection",
+        }],
+      },
+    },
+    {
+      srNo: 5.18,
+      controller: "Access rights",
+      condition: "",
+      description: "",
+      files: [],
+      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Protect",
+        }],
+        td_d:[ {
+          point_a: "#Identity_and_access_management",
+        }],
+        td_e: [{
+          point_a: "#Protection",
+        }],
+      },
+    },
+    {
+      srNo: 5.19,
       controller: "Information security in supplier relationships",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Protect",
+        }],
+        td_d:[ {
+          point_a: "#Identity_and_access_management",
+        }],
+        td_e: [{
+          point_a: "#Protection",
+        }],
+      },
     },
     {
-      srNo: 5.18,
+      srNo: 5.2,
       controller: "Addressing information security within supplier agreements",
       condition: "",
       description: "",
       files: [],
       color: false,
-    },
-    {
-      srNo: 5.19,
-      controller:
-        " Managing information security in the information and communication technology (ICT) supply chain",
-      condition: "",
-      description: "",
-      files: [],
-      color: false,
-    },
-    {
-      srNo: 5.2,
-      controller: "Monitoring",
-      condition: "",
-      description: "",
-      files: [],
-      color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Identify",
+        }],
+        td_d:[ {
+          point_a: "#Supplier_relationships_security",
+        }],
+        td_e:[ {
+          point_a: "#Governance_and_ Ecosystem",
+          ponit_a: "#Protection",
+        }],
+      },
     },
     {
       srNo: 5.21,
-      controller: "review and change management of supplier services",
+      controller: "Managing information security in the ICT supply chain",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Identify",
+        }],
+        td_d:[ {
+          point_a: "#Supplier_relationships_security",
+        }],
+        td_e: [{
+          point_a: "#Governance_and_ Ecosystem"},
+        {  ponit_a: "#Protection"},
+        ],
+      },
     },
     {
       srNo: 5.22,
+      controller:
+        "Monitoring, review and change management of supplier services",
+      condition: "",
+      description: "",
+      files: [],
+      color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Identify",
+        }],
+        td_d: [{
+          point_a: "#Supplier_relationships_security",
+        }],
+        td_e:[ {
+          point_a: "#Governance_and_ Ecosystem"},
+          {ponit_a: "#Protection"},
+          {ponit_a: "#Defence"},
+         { point_a: "#Information_security_assurance"},
+        ],
+      },
+    },
+
+    {
+      srNo: 5.23,
       controller: "Information security for use of cloud services",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Protect",
+        }],
+        td_d:[ {
+          point_a: "#Supplier_relationships_security",
+        }],
+        td_e:[ {
+          point_a: "#Governance_and_ Ecosystem"},
+         { ponit_a: "#Protection"},
+        ],
+      },
     },
     {
-      srNo: 5.23,
+      srNo: 5.24,
+      controller:
+        "Information security incident management planning and preparation",
+      condition: "",
+      description: "",
+      files: [],
+      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Corrective",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Respond "},
+          {ponit_a: "#Recover "},
+        ],
+        td_d: [{
+          point_a: "#Governance"},
+         { ponit_a: "#Information_security_event_management "},
+        ],
+        td_e: [{
+          point_a: "#Defence",
+        }],
+      },
+    },
+    {
+      srNo: 5.25,
       controller: "Assessment and decision on information security events",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Detective",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Detect"},
+          {ponit_a: "#Respond"},
+        ],
+        td_d: [{
+          point_a: "#Information_security_event_management ",
+        }],
+        td_e:[ {
+          point_a: "#Defence",
+        }],
+      },
     },
     {
-      srNo: 5.24,
+      srNo: 5.26,
       controller: "Response to information security incidents",
       condition: "",
       description: "",
       files: [],
       color: false,
-    },
-    {
-      srNo: 5.25,
-      controller: " Learning from information security incidents",
-      condition: "",
-      description: "",
-      files: [],
-      color: false,
-    },
-    {
-      srNo: 5.26,
-      controller: " Collection of evidence",
-      condition: "",
-      description: "",
-      files: [],
-      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Corrective",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Respond"},
+         { ponit_a: "#Recover"},
+        ],
+        td_d: [{
+          point_a: "#Information_security_event_management ",
+        }],
+        td_e:[ {
+          point_a: "#Defence",
+        }],
+      },
     },
     {
       srNo: 5.27,
-      controller: " Information security during disruption",
+      controller: "Learning from information security incidents",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Identify"},
+          {ponit_a: "#Protect"},
+        ],
+        td_d: [{
+          point_a: "#Information_security_event_management ",
+        }],
+        td_e: [{
+          point_a: "#Defence",
+        }],
+      },
     },
     {
       srNo: 5.28,
+      controller: "Collection of evidence",
+      condition: "",
+      description: "",
+      files: [],
+      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Corrective",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Detect"},
+          {ponit_a: "#Respond"},
+        ],
+        td_d: [{
+          point_a: "#Information_security_event_management ",
+        }],
+        td_e:[ {
+          point_a: "#Defence",
+        }],
+      },
+    },
+    {
+      srNo: 5.29,
+      controller: "Information security during disruption",
+      condition: "",
+      description: "",
+      files: [],
+      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive"}],
+          td_b: [{
+            point_a: "#confidentiality"},
+            {ponit_a: "#Integrity"},
+           { ponit_a: "#Availibilty"},
+          ],
+        td_c:[ {
+          point_a: "#Protect"},
+          {ponit_a: "#Respond"},
+        ],
+        td_d: [{
+          point_a: "#Continuity",
+        }],
+        td_e:[ {
+          point_a: "#Protection"},
+          {point_a: "#Resilience"},
+        ],
+      },
+    },
+    {
+      srNo: 5.3,
       controller: "ICT readiness for business continuity",
       condition: "",
       description: "",
       files: [],
       color: false,
-    },
-    {
-      srNo: 5.29,
-      controller: "Legal, statutory",
-      condition: "",
-      description: "",
-      files: [],
-      color: false,
-    },
-    {
-      srNo: 5.3,
-      controller: "regulatory and contractual requirements",
-      condition: "",
-      description: "",
-      files: [],
-      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Corrective",
+        }],
+        td_b:[ {
+          point_a: "#Availibilty",
+        }],
+        td_c: [{
+          point_a: "#Respond",
+        }],
+        td_d:[ {
+          point_a: "#Continuity",
+        }],
+        td_e:[ {
+          point_a: "#Resilience",
+        }],
+      },
     },
     {
       srNo: 5.31,
+      controller: "Legal, statutory, regulatory and contractual requirements",
+      condition: "",
+      description: "",
+      files: [],
+      color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Identify",
+        }],
+        td_d:[ {
+          point_a: "#Legal_and_compliance",
+        }],
+        td_e:[ {
+          point_a: "#Governance_and_Ecosystem"},
+          {ponit_a: "#Protection"},
+        ],
+      },
+    },
+    {
+      srNo: 5.32,
       controller: "Intellectual property rights",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Identify",
+        }],
+        td_d:[ {
+          point_a: "#Legal_and_compliance",
+        }],
+        td_e:[ {
+          point_a: "#Governance_and_Ecosystem",
+        }],
+      },
     },
     {
-      srNo: 5.32,
+      srNo: 5.33,
       controller: "Protection of records",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Identify"},
+          {ponit_a: "Protect"},
+        ],
+        td_d: [{
+          point_a: "#Legal_and_compliance"},
+          {ponit_a: "#Asset_management"},
+         { ponit_a: "#nformation_protection"},
+        ],
+        td_e: [{
+          point_a: "#Defence",
+        }],
+      },
     },
     {
-      srNo: 5.33,
-      controller:
-        " Privacy and protection of personal identifiable information (PII)",
+      srNo: 5.34,
+      controller: "Privacy and protection of PII",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Identify"},
+          {ponit_a: "Protect"},
+        ],
+        td_d:[ {
+          point_a: "#nformation_protection"},
+         { ponit_a: "#Legal_and_compliance"},
+        ],
+        td_e: [{
+          point_a: "#Protection",
+        }],
+      },
     },
     {
-      srNo: 5.34,
+      srNo: 5.35,
       controller: "Independent review of information security",
       condition: "",
       description: "",
       files: [],
       color: false,
-    },
-    {
-      srNo: 5.35,
-      controller: "Compliance with policies",
-      condition: "",
-      description: "",
-      files: [],
-      color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive"},
+         { ponit_a: "#Corrective"},
+        ],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Identify"},
+          {ponit_a: "Protect"},
+        ],
+        td_d:[ {
+          point_a: "#Information_security_assurance",
+        }],
+        td_e:[ {
+          point_a: "#Governance_and_Ecosystem",
+        }],
+      },
     },
     {
       srNo: 5.36,
-      controller: "rules and standards for information security",
+      controller:
+        "Compliance with policies, rules and standards for information security",
       condition: "",
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Identify"},
+          {ponit_a: "Protect"},
+        ],
+        td_d: [{
+          point_a: "#Legal_and_compliance"},
+          {ponit_a: "#Information_security_assurance"},
+        ],
+        td_e: {},
+      },
     },
     {
       srNo: 5.37,
@@ -324,18 +1036,56 @@ export default function CompA5() {
       description: "",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive"},
+          {ponit_a: "#Corrective"},
+        ],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Protect"},
+          {ponit_a: "#Recover"},
+        ],
+        td_d: [{
+          point_a: "#Asset_management"},
+          {ponit_a: "#Physical_security"},
+         { ponit_a: "#System_and_network_security"},
+         { point_a: "#Application_security"},
+         { point_a: "#Secure_configuration"},
+         { point_a: "#Identity_and_access_management"},
+         { point_a: "#Treat_and_vulnerability_management"},
+         { point_a: "#Continuity"},
+         { point_a: "#Information_security_event_management"},
+        ],
+        td_e: [{
+          point_a: "#Governance_and_Ecosystem"},
+          {ponit_a: "#Protection"},
+         { ponit_a: "#Defence"},
+        ],
+      },
     },
   ];
+  const cc = {
+    srNo: 5.1,
+    controller: "Policies for \\n information security",
+  };
+  const b = cc.controller.replace("\\n", `</br>`);
+  // document.getElementById("data").innerHTML = `Controller: ${b}`;
+
   const [controlerA5, setControlerA5] = useState(A5);
-  console.log('controlerA5',controlerA5)
+  console.log("controlerA5", controlerA5);
   const [modalShow, setModalShow] = useState(false);
   const [show, setShow] = useState(true);
-  const [data,setdata] =useState({})
- 
+  const [data, setdata] = useState({});
+
   const handleClose = () => setModalShow(false);
   const handleShow = (el) => {
-    setModalShow(true)
-    setdata(el)
+    setModalShow(true);
+    setdata(el);
   };
 
   const handleShowHide = () => {
@@ -413,8 +1163,14 @@ export default function CompA5() {
           </div>
           <div className={`${show ? "d-none" : "d-block"}`}>
             <div className={`table-resposive overflow-auto bg-graye`}>
+              {/* {db.map((el)=>(
+                <div>
+                  {el.Guidance.split('\\n').map(line=><p>{line}</p>)}
+                </div>
+              ))} */}
               {controlerA5.map((el, index) => (
                 <table key={index}>
+                  {/* {console.log(el.controller.replace('\\n', '\n'))} */}
                   <tr className={`${el.color ? "green" : ""}`}>
                     {/************Begin:: Sr No :***********  */}
                     <td>
@@ -424,8 +1180,13 @@ export default function CompA5() {
 
                     {/************Begin::Controller Name :***********  */}
                     <td>
-                      <p className="overflow-hidden" style={{ width: "16rem" }}>
+                      <p
+                        id="data"
+                        className="overflow-hidden"
+                        style={{ width: "16rem" }}
+                      >
                         {el.controller}
+                        {/* Policies for <br/> information secu`rity */}
                       </p>
                     </td>
                     {/************Begin::Controller Name :***********  */}
@@ -447,8 +1208,8 @@ export default function CompA5() {
                     </td>
                     <td>
                       <textarea
-                      className="mt-3"
-                        style={{ height: "40px", width:'17rem' }}
+                        className="mt-3"
+                        style={{ height: "40px", width: "17rem" }}
                         value={controlerA5[index].description}
                         name="description"
                         form="usrform"
@@ -489,12 +1250,9 @@ export default function CompA5() {
                       </button>
                     </td>
                     <td>
-                    <span onClick={()=>handleShow(el.help_data)}>
-                      <BiHelpCircle 
-                      title="help"
-                      className="ico2"
-                     />
-                    </span>
+                      <span onClick={() => handleShow(el.help_data)}>
+                        <BiHelpCircle title="help" className="ico2" />
+                      </span>
                     </td>
                   </tr>
                 </table>
@@ -505,12 +1263,13 @@ export default function CompA5() {
         {/* ***************End::Controller For A5********************** */}
       </div>
 
-    {/******************* Help Modal ************************** */}
-    <Modal show={modalShow} size='lg' onHide={handleClose} animation={false}>
-        <Modal.Header closeButton>
+      {/******************* Help Modal ************************** */}
+      <Modal show={modalShow} size="lg" onHide={handleClose} animation={false}>
+        <Modal.Header className="border-0" closeButton>
+        <Modal.Title>Help</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <HelpModal data={data}/>
+          <HelpModal data={data} />
         </Modal.Body>
       </Modal>
     </>

@@ -460,7 +460,7 @@ export default function CompA8() {
       </div>
           {/******************* Help Modal ************************** */}
     <Modal show={modalShow} size='lg' onHide={handleClose} animation={false}>
-        <Modal.Header closeButton>
+        <Modal.Header className="border-0" closeButton>
         </Modal.Header>
         <Modal.Body>
           <HelpModal data={data}/>

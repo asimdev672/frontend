@@ -1,37 +1,67 @@
 import React from "react";
 
 export default function HelpModal({ data }) {
-  console.log("data",);
+  console.log("data");
+  const handleFont = {
+    fontFamily: "math !important",
+    width: "max-content",
+  };
   return (
     <>
-    
-    <table className="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-    </tr>
-  </tbody>
-</table>
-
+      <div className={`table-resposive overflow-auto bg-graye`}>
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">
+                <p style={handleFont}>Control type</p>
+              </th>
+              <th scope="col">
+                <p style={{ width: "max-content" }}>
+                  Information security properties
+                </p>
+              </th>
+              <th scope="col">
+                <p style={{ width: "max-content" }}>Cybersecurity concept</p>
+              </th>
+              <th scope="col">
+                <p style={{ width: "max-content" }}>Operational capabilities</p>
+              </th>
+              <th scope="col">
+                <p style={{ width: "max-content" }}>Security domain</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                {data?.td_a?.map((el) => (
+                  <p style={{ fontWeight: "300" }}>{el?.point_a}</p>
+                ))}
+              </td>
+              <td>
+                {data?.td_b?.map((el) => (
+                  <p style={{ fontWeight: "300" }}>{el?.point_a}</p>
+                ))}
+              </td>
+              <td>
+                {data?.td_c?.map((el) => (
+                  <p style={{ fontWeight: "300" }}>{el?.point_a}</p>
+                ))}
+              </td>
+              <td>
+                {data?.td_d?.map((el) => (
+                  <p style={{ fontWeight: "300" }}>{el?.point_a}</p>
+                ))}
+              </td>
+              <td>
+                {data?.td_e?.map((el) => (
+                  <p style={{ fontWeight: "300" }}>{el?.point_a}</p>
+                ))}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </>
   );
 }

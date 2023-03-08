@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
 import HelpModal from "./HelpModal";
-import {BiHelpCircle} from 'react-icons/bi'
+import { BiHelpCircle } from "react-icons/bi";
 export default function CompA6() {
   const A6 = [
     {
@@ -13,6 +13,35 @@ export default function CompA6() {
       description: " ",
       files: [],
       color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Human_resource_security",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+        ],
+      },
     },
     {
       srNo: 6.2,
@@ -21,14 +50,58 @@ export default function CompA6() {
       description: " ",
       files: [],
       color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [{ point_a: "#Defence" }],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+        ],
+      },
     },
     {
       srNo: 6.3,
-      controller: "Information security awareness,Education and training",
+      controller: "Information security awareness, Education and training",
       condition: " ",
       description: " ",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Protect",
+        }],
+        td_d: [{
+          point_a: "#Human_resource_security",
+        }],
+        td_e: [{
+          point_a: "#Governance_and_Ecosystem",
+        }],
+      },
     },
     {
       srNo: 6.4,
@@ -37,6 +110,25 @@ export default function CompA6() {
       description: " ",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive"},
+          {ponit_a: "#corrective"},
+        ],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Protect"},
+          {ponit_a: "#Respond"},
+        ],
+        td_d: [{
+          point_a: "#Human_resource_security",
+        }],
+        td_e: [{point_a: "#Defence",}],
+      },
     },
     {
       srNo: 6.5,
@@ -45,6 +137,26 @@ export default function CompA6() {
       description: " ",
       files: [],
       color: false,
+      help_data: {
+        td_a: [{
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "Protect",
+        }],
+        td_d:[ {
+          point_a: "#Human_resource_security"},
+          {point_a: "#Asset_management"},
+        ],
+        td_e: [{
+          point_a: "#Governance_and_Ecosystem",
+        }],
+      },
     },
     {
       srNo: 6.6,
@@ -53,6 +165,25 @@ export default function CompA6() {
       description: " ",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive",
+        }],
+        td_b:[ {
+          point_a: "#confidentiality",
+        }],
+        td_c: [{
+          point_a: "Protect",
+        }],
+        td_d:[ {
+          point_a: "#Human_resource_security"},
+         { ponit_a: " #Information_protection"},
+         { ponit_a: " #Supplier_relationships"},
+        ],
+        td_e:[ {
+          point_a: "#Governance_and_Ecosystem",
+        }],
+      },
     },
     {
       srNo: 6.7,
@@ -61,6 +192,28 @@ export default function CompA6() {
       description: " ",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Preventive",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c:[ {
+          point_a: "#Protect",
+        }],
+        td_d: [{
+          point_a: "#Asset_management"},
+          {ponit_a: "#Information_protection"},
+          {ponit_a: "#Physical_security"},
+          {point_a: "#System_and_network_security"},
+        ],
+        td_e: [{
+          point_a: "#Protection",
+        }],
+      },
     },
     {
       srNo: 6.8,
@@ -69,18 +222,36 @@ export default function CompA6() {
       description: " ",
       files: [],
       color: false,
+      help_data: {
+        td_a:[ {
+          point_a: "#Detective",
+        }],
+        td_b: [{
+          point_a: "#confidentiality"},
+          {ponit_a: "#Integrity"},
+         { ponit_a: "#Availibilty"},
+        ],
+        td_c: [{
+          point_a: "#Detect",
+        }],
+        td_d:[ {
+          point_a: "#Information_security_event_managementProtection",
+        }],
+        td_e: [{
+          point_a: "#Defence",
+        }],
+      },
     },
   ];
-
   const [controlerA6, setControlerA6] = useState(A6);
   const [modalShow, setModalShow] = useState(false);
   const [show, setShow] = useState(true);
-  const [data,setdata] =useState({})
- 
+  const [data, setdata] = useState({});
+
   const handleClose = () => setModalShow(false);
   const handleShow = (el) => {
-    setModalShow(true)
-    setdata(el)
+    setModalShow(true);
+    setdata(el);
   };
 
   const handleShowHide = () => {
@@ -114,7 +285,7 @@ export default function CompA6() {
     setControlerA6(newArr);
   };
   // handleSubmit
-  const handleSubmit = (el,index) => {
+  const handleSubmit = (el, index) => {
     console.log("inputData 5", el);
     const newFormData = new FormData();
     newFormData.append("srNo", el.srNo);
@@ -132,10 +303,10 @@ export default function CompA6() {
         let copArr = [...controlerA6];
         let obj = copArr[index];
         obj.color = true;
-        obj.condition = '';
-        obj.description = '';
+        obj.condition = "";
+        obj.description = "";
         obj.files = [];
-        copArr[index]=obj
+        copArr[index] = obj;
         setControlerA6(copArr);
         toast.success("Successfully Added");
         console.log(
@@ -191,8 +362,8 @@ export default function CompA6() {
                     </td>
                     <td>
                       <textarea
-                       className="mt-3"
-                       style={{ height: "40px", width:'17rem' }}
+                        className="mt-3"
+                        style={{ height: "40px", width: "17rem" }}
                         value={controlerA6[index].description}
                         name="description"
                         form="usrform"
@@ -227,18 +398,15 @@ export default function CompA6() {
                     <td>
                       <button
                         className="submitBtn"
-                        onClick={() => handleSubmit(el,index)}
+                        onClick={() => handleSubmit(el, index)}
                       >
                         Submit
                       </button>
                     </td>
                     <td>
-                    <span onClick={()=>handleShow(el?.help_data)}>
-                      <BiHelpCircle 
-                      title="help"
-                      className="ico2"
-                     />
-                    </span>
+                      <span onClick={() => handleShow(el?.help_data)}>
+                        <BiHelpCircle title="help" className="ico2" />
+                      </span>
                     </td>
                   </tr>
                 </table>
@@ -248,12 +416,11 @@ export default function CompA6() {
         </div>
         {/* ***************End::Controller For A6********************** */}
       </div>
-          {/******************* Help Modal ************************** */}
-    <Modal show={modalShow} size='lg' onHide={handleClose} animation={false}>
-        <Modal.Header closeButton>
-        </Modal.Header>
+      {/******************* Help Modal ************************** */}
+      <Modal show={modalShow} size="lg" onHide={handleClose} animation={false}>
+        <Modal.Header className="border-0" closeButton></Modal.Header>
         <Modal.Body>
-          <HelpModal data={data}/>
+          <HelpModal data={data} />
         </Modal.Body>
       </Modal>
     </>
