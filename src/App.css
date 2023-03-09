@@ -1,28 +1,29 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 
   /* font-family: "Poppins", sans-serif; */
 }
-body{
-  font-family: 'Roboto', sans-serif !important;
+body {
+  font-family: "Roboto", sans-serif !important;
   background: #7fa6cf1a !important;
 }
-.bg-graye{
+.bg-graye {
   background: #8080801a !important;
 }
-select :focus-visible,:focus{
+select :focus-visible,
+:focus {
   /* border: none !important; */
   outline: none !important;
 }
 a {
   text-decoration: none;
 }
-.green{
+.green {
   background: #17e01740 !important;
 }
 .hero {
@@ -93,7 +94,7 @@ th {
   overflow: hidden;
   display: inline-block;
 }
-.ico{
+.ico {
   position: absolute;
   border-radius: 50%;
   width: 15px;
@@ -124,10 +125,9 @@ th {
   font-size: 16px;
   border: none;
 }
-.ico2{
+.ico2 {
   cursor: pointer;
   font-size: larger;
-
 }
 /* The container <div> - needed to position the dropdown content */
 
@@ -141,9 +141,10 @@ table {
   width: 100%;
 }
 
-th, td {
+th,
+td {
   padding: 15px;
-} 
+}
 .mainHeading {
   display: block !important;
   background-color: navy !important;
@@ -159,7 +160,6 @@ th, td {
   color: black;
 }
 
-
 .fileUpload,
 .submitBtn {
   cursor: pointer !important;
@@ -171,4 +171,40 @@ th, td {
   font-size: 10px;
   font-weight: bold;
   width: max-content;
+}
+
+.chatBox {
+  position: fixed;
+  width: 23rem;
+  height: 30rem;
+  right: 2rem;
+  top: 2rem;
+  background-color: rgb(59 75 109);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.chat-main .chat-ico {
+  font-size: xxx-large;
+  position: fixed;
+  bottom: 26px;
+  right: 45px;
+  color: #22007b;
+  cursor: pointer;
+  border: 1px solid navy;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.chat_body h5 {
+  font-size: medium;
+  font-weight: 600;
+  color: white;
+}
+.chat_body p {
+  font-size: small;
+  text-align: justify;
+  color: white;
+  font-weight: 200;
 }

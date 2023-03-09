@@ -1163,14 +1163,9 @@ export default function CompA5() {
           </div>
           <div className={`${show ? "d-none" : "d-block"}`}>
             <div className={`table-resposive overflow-auto bg-graye`}>
-              {/* {db.map((el)=>(
-                <div>
-                  {el.Guidance.split('\\n').map(line=><p>{line}</p>)}
-                </div>
-              ))} */}
+
               {controlerA5.map((el, index) => (
                 <table key={index}>
-                  {/* {console.log(el.controller.replace('\\n', '\n'))} */}
                   <tr className={`${el.color ? "green" : ""}`}>
                     {/************Begin:: Sr No :***********  */}
                     <td>
@@ -1186,7 +1181,6 @@ export default function CompA5() {
                         style={{ width: "16rem" }}
                       >
                         {el.controller}
-                        {/* Policies for <br/> information secu`rity */}
                       </p>
                     </td>
                     {/************Begin::Controller Name :***********  */}

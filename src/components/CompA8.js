@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
 import HelpModal from "./HelpModal";
-import {BiHelpCircle} from 'react-icons/bi'
+import { BiHelpCircle } from "react-icons/bi";
 
 export default function CompA8() {
   const A8 = [
@@ -13,7 +13,37 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Physical_security",
+          },
+          { point_a: "#Asset_management" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.2,
@@ -21,7 +51,36 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Identity_and_access_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.3,
@@ -29,7 +88,36 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Identity_and_access_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.4,
@@ -37,7 +125,38 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Identity_and_access_management",
+          },
+          { point_a: "#Application_security" },
+          { point_a: "#Secure_configuration" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.5,
@@ -45,7 +164,36 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Identity_and_access_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.6,
@@ -53,7 +201,39 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Detective" },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "#Protect" },
+          { point_a: "#Detect" },
+        ],
+        td_d: [
+          {
+            point_a: "#Continuity",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+          { point_a: "#Protection" },
+        ],
+      },
     },
     {
       srNo: 8.7,
@@ -61,7 +241,41 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Detective" },
+          { point_a: "#Corrective" },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+          { point_a: "#Detect" },
+        ],
+        td_d: [
+          {
+            point_a: "#System_and_network_security",
+          },
+          { point_a: "#Information_protection" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+          { point_a: "#Defence" },
+        ],
+      },
     },
     {
       srNo: 8.8,
@@ -69,7 +283,39 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "#Protect" },
+        ],
+        td_d: [
+          {
+            point_a: "#Threat_and_vulnerability_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+          { point_a: "#Protection" },
+          { point_a: "#Defence" },
+        ],
+      },
     },
     {
       srNo: 8.9,
@@ -77,7 +323,36 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Secure_configuration",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.1,
@@ -85,7 +360,35 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_protection",
+          },
+          { oint_a: "#Legal_and_compliance" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.11,
@@ -93,7 +396,34 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_protection",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.12,
@@ -101,7 +431,37 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Detective" },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+          { point_a: "#Detect" },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_protection",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+          { point_a: "#Defence" },
+        ],
+      },
     },
     {
       srNo: 8.13,
@@ -109,7 +469,35 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Corrective",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#Integrity",
+          },
+          { point_a: "#Availability" },
+        ],
+        td_c: [
+          {
+            point_a: "#Recover",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Continuity",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.14,
@@ -117,7 +505,36 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#Availability",
+          },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Continuity",
+          },
+          { point_a: "#Asset_management" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+          { point_a: "#Resilience" },
+        ],
+      },
     },
     {
       srNo: 8.15,
@@ -125,7 +542,37 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Detective",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Detect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_security_event_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+          { point_a: "#Defence" },
+        ],
+      },
     },
     {
       srNo: 8.16,
@@ -133,15 +580,76 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Corrective" },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Detect",
+          },
+          { point_a: "#Respond" },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_security_event_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+        ],
+      },
     },
+
     {
       srNo: 8.17,
       controller: "Clock synchronization",
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Detective",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#Integrity",
+          },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+          { point_a: "#Detect" },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_security_event_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+          { point_a: "#Defence" },
+        ],
+      },
     },
     {
       srNo: 8.18,
@@ -149,7 +657,38 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#System_and_network_security",
+          },
+          { point_a: "#Secure_configuration" },
+          { point_a: "#Application_security" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.19,
@@ -157,7 +696,37 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Secure_configuration",
+          },
+          { point_a: "#Application_security" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.2,
@@ -165,7 +734,38 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Detective" },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+          { point_a: "#Detect" },
+        ],
+        td_d: [
+          {
+            point_a: "#System_and_network_security",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.21,
@@ -173,7 +773,36 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#System_and_network_security",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.22,
@@ -181,7 +810,38 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: {
+          td_b: [
+            {
+              point_a: "#confidentiality",
+            },
+            { ponit_a: "#Integrity" },
+            { ponit_a: "#Availibilty" },
+          ],
+          td_c: [
+            {
+              point_a: "#Protect",
+            },
+          ],
+          td_d: [
+            {
+              point_a: "#System_and_network_security",
+            },
+          ],
+          td_e: [
+            {
+              point_a: "#Protection",
+            },
+          ],
+        },
+      },
     },
     {
       srNo: 8.23,
@@ -189,7 +849,36 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#System_and_network_security",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.24,
@@ -197,7 +886,36 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Secure_configuration",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.25,
@@ -205,7 +923,37 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Application_security",
+          },
+          { point_a: "#System_and_network_security" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.26,
@@ -213,7 +961,38 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Application_security",
+          },
+          { point_a: "#System_and_network_security" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+          { point_a: "#Defence" },
+        ],
+      },
     },
     {
       srNo: 8.27,
@@ -221,7 +1000,37 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Application_security",
+          },
+          { point_a: "#System_and_network_security" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.28,
@@ -229,7 +1038,37 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Application_security",
+          },
+          { point_a: "#System_and_network_security" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.29,
@@ -237,7 +1076,38 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Application_security",
+          },
+          { point_a: "#Information_security_assurance" },
+          { point_a: "#System_and_network_security" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.3,
@@ -245,7 +1115,42 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Detective" },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "#Protect" },
+          { point_a: "#Detect" },
+        ],
+        td_d: [
+          {
+            point_a: "#System_and_network_security",
+          },
+          { point_a: "#Application_security" },
+          { point_a: "#Supplier_relationships_security" },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+          { point_a: "#Protection" },
+        ],
+      },
     },
     {
       srNo: 8.31,
@@ -253,7 +1158,37 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Application_security",
+          },
+          { point_a: "#System_and_network_security" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.32,
@@ -261,7 +1196,37 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Application_security",
+          },
+          { point_a: "#System_and_network_security" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.33,
@@ -269,7 +1234,35 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_protection",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
+      },
     },
     {
       srNo: 8.34,
@@ -277,19 +1270,50 @@ export default function CompA8() {
       condition: " ",
       description: " ",
       files: [],
-      color:false
+      color: false,
+      help_data: {
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { ponit_a: "#Integrity" },
+          { ponit_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#System_and_network_security",
+          },
+          { point_a: "#Information_protection" },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+          { point_a: "#Protection" },
+        ],
+      },
     },
   ];
 
   const [controlerA8, setControlerA8] = useState(A8);
   const [modalShow, setModalShow] = useState(false);
   const [show, setShow] = useState(true);
-  const [data,setdata] =useState({})
- 
+  const [data, setdata] = useState({});
+
   const handleClose = () => setModalShow(false);
   const handleShow = (el) => {
-    setModalShow(true)
-    setdata(el)
+    setModalShow(true);
+    setdata(el);
   };
 
   const handleShowHide = () => {
@@ -323,7 +1347,7 @@ export default function CompA8() {
     setControlerA8(newArr);
   };
   // handleSubmit
-  const handleSubmit = (el,index) => {
+  const handleSubmit = (el, index) => {
     console.log("inputData 5", el);
     const newFormData = new FormData();
     newFormData.append("srNo", el.srNo);
@@ -341,10 +1365,10 @@ export default function CompA8() {
         let copArr = [...controlerA8];
         let obj = copArr[index];
         obj.color = true;
-        obj.condition = '';
-        obj.description = '';
+        obj.condition = "";
+        obj.description = "";
         obj.files = [];
-        copArr[index]=obj
+        copArr[index] = obj;
         setControlerA8(copArr);
         toast.success("Successfully Added");
 
@@ -369,7 +1393,7 @@ export default function CompA8() {
             <div className={`table-resposive overflow-auto bg-graye`}>
               {controlerA8.map((el, index) => (
                 <table key={index}>
-                  <tr className={`${el.color?'green':''}`}>
+                  <tr className={`${el.color ? "green" : ""}`}>
                     {/************Begin:: Sr No :***********  */}
                     <td>
                       <p style={{ width: "1rem" }}>{el.srNo}</p>
@@ -401,8 +1425,8 @@ export default function CompA8() {
                     </td>
                     <td>
                       <textarea
-                         className="mt-3"
-                         style={{ height: "40px", width:'17rem' }}
+                        className="mt-3"
+                        style={{ height: "40px", width: "17rem" }}
                         value={controlerA8[index].description}
                         name="description"
                         form="usrform"
@@ -437,18 +1461,15 @@ export default function CompA8() {
                     <td>
                       <button
                         className="submitBtn"
-                        onClick={() => handleSubmit(el,index)}
+                        onClick={() => handleSubmit(el, index)}
                       >
                         Submit
                       </button>
                     </td>
                     <td>
-                    <span onClick={()=>handleShow(el?.help_data)}>
-                      <BiHelpCircle 
-                      title="help"
-                      className="ico2"
-                     />
-                    </span>
+                      <span onClick={() => handleShow(el?.help_data)}>
+                        <BiHelpCircle title="help" className="ico2" />
+                      </span>
                     </td>
                   </tr>
                 </table>
@@ -458,12 +1479,11 @@ export default function CompA8() {
         </div>
         {/* ***************End::Controller For A8********************** */}
       </div>
-          {/******************* Help Modal ************************** */}
-    <Modal show={modalShow} size='lg' onHide={handleClose} animation={false}>
-        <Modal.Header className="border-0" closeButton>
-        </Modal.Header>
+      {/******************* Help Modal ************************** */}
+      <Modal show={modalShow} size="lg" onHide={handleClose} animation={false}>
+        <Modal.Header className="border-0" closeButton></Modal.Header>
         <Modal.Body>
-          <HelpModal data={data}/>
+          <HelpModal data={data} />
         </Modal.Body>
       </Modal>
     </>
