@@ -320,7 +320,7 @@ export default function CompA6() {
   };
   return (
     <>
-      <div className="container-lg container-fluid">
+      <div className="container-lg container-fluid ">
         {/* ***************Begin::Controller For A6****************** */}
         <div className="overflow-hidden">
           <div onClick={handleShowHide} className="mainHeading">
