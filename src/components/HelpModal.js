@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function HelpModal({ data }) {
-  console.log("data");
+console.log('data',data)
   const handleFont = {
     fontFamily: "math !important",
     width: "max-content",

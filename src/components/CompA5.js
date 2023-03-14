@@ -4,9 +4,7 @@ import { Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
 import HelpModal from "./HelpModal";
 import { BiHelpCircle } from "react-icons/bi";
-import db from "./db.json";
 export default function CompA5() {
-  console.log("db", db);
   const A5 = [
     {
       srNo: 5.1,
@@ -21,20 +19,26 @@ export default function CompA5() {
             point_a: "#Prevention",
           },
         ],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"}
+        td_b: [
+          {point_a: "#confidentiality"},
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_c: [{
-          point_a: "#Identify",
-        }],
-        td_d: [{
-          point_a: "#Governance",
-        }],
-        td_e: [{
-          point_a: "Governance_and_Ecosystem"},
-         { ponit_a: "#Resilience"},
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Governance",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "Governance_and_Ecosystem",
+          },
+          { point_a: "#Resilience" },
         ],
       },
     },
@@ -46,23 +50,31 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: {
+        td_a:[ {
           point_a: "#Prevention",
-        },
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-          {ponit_a: "#Availibilty"},
+        }],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_c: [{
-          point_a: "#Identify",
-        }],
-        td_d:[ {
-          point_a: "#Governance",
-        }],
-        td_e: [{
-          point_a: "Governance_and_Ecosystem"},
-          {ponit_a: "#Resilience"},
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Governance",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "Governance_and_Ecosystem",
+          },
+          { point_a: "#Resilience" },
         ],
       },
     },
@@ -74,24 +86,34 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a:[ {
-          point_a: "#Prevention",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-          {ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Prevention",
+          },
         ],
-        td_c:[ {
-          point_a: "#Protect",
-        }],
-        td_d: [{
-          point_a: "#Governance"},
-          {ponit_a: "#Identity_and_access_management"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_e: [{
-          point_a: "#Governance_and_Ecosystem",
-        }],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Governance",
+          },
+          { point_a: "#Identity_and_access_management" },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+        ],
       },
     },
     {
@@ -102,23 +124,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Prevention",
-        }],
-        td_b:[ {
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-          {ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Prevention",
+          },
         ],
-        td_c:[ {
-          point_a: "#Identify",
-        }],
-        td_d: [{
-          point_a: "#Governance",
-        }],
-        td_e: [{
-          point_a: "# Governance_and_Ecosystem",
-        }],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Governance",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "# Governance_and_Ecosystem",
+          },
+        ],
       },
     },
     {
@@ -129,27 +161,37 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive"},
-          {ponit_a: "#Corrective"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Corrective" },
         ],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_c: [{
-          point_a: "#Identify"},
-          {ponit_a: "#Protect"},
-          {ponit_a: "#Respond"},
-          {point_d: "#Recover"},
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "#Protect" },
+          { point_a: "#Respond" },
+          { point_d: "#Recover" },
         ],
-        td_d: [{
-          point_a: "#Governance",
-        }],
-        td_e:[ {
-          point_a: "#Defence"},
-          {ponit_a: "#Resilience "},
+        td_d: [
+          {
+            point_a: "#Governance",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+          { point_a: "#Resilience " },
         ],
       },
     },
@@ -161,26 +203,36 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive"},
-          {ponit_a: "#Corrective"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Corrective" },
         ],
-        td_b:[ {
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_c: [{
-          ponit_a: "#Protect"},
-          {ponit_a: "#Respond"},
-          {ponit_a: "#Recover"},
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+          { point_a: "#Respond" },
+          { point_a: "#Recover" },
         ],
-        td_d: [{
-          point_a: "#Governance",
-        }],
-        td_e:[ {
-          point_a: "#Defence",
-        }],
+        td_d: [
+          {
+            point_a: "#Governance",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+        ],
       },
     },
     {
@@ -191,27 +243,37 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive"},
-         { ponit_a: "#Detective"},
-         { ponit_a: "#Corrective"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Detective" },
+          { point_a: "#Corrective" },
         ],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-          {ponit_a: "#Availibilty"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_c: [{
-          ponit_a: "#Identify"},
-         { ponit_a: "#Detect"},
-          {ponit_a: "#Respond "},
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "#Detect" },
+          { point_a: "#Respond " },
         ],
-        td_d: [{
-          point_a: "#Threat_and_vulnerability_management",
-        }],
-        td_e: [{
-          point_a: "#Defence"},
-         { ponit_a: "#Resilience"},
+        td_d: [
+          {
+            point_a: "#Threat_and_vulnerability_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+          { point_a: "#Resilience" },
         ],
       },
     },
@@ -223,24 +285,34 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a:[ {
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-          {ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c:[ {
-          ponit_a: "#Identify"},
-          {ponit_a: "#Protect"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_d: [{
-          point_a: "#Governance",
-        }],
-        td_e:[ {
-          point_a: "#Governance_and_Ecosystem "},
-         { ponit_a: "#Protection"},
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "#Protect" },
+        ],
+        td_d: [
+          {
+            point_a: "#Governance",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem ",
+          },
+          { point_a: "#Protection" },
         ],
       },
     },
@@ -252,23 +324,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Identify",
-        }],
-        td_d:[ {
-          point_a: "#Asset_management",
-        }],
-        td_e:[ {
-          point_a: "#Governance_and_Ecosystem "},
-          {ponit_a: "#Protection"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Asset_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem ",
+          },
+          { point_a: "#Protection" },
         ],
       },
     },
@@ -280,24 +362,34 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b:[ {
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-          {ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Identify",
-        }],
-        td_d: [{
-          point_a: "#Asset Management"},
-         { ponit_a: "#Information_protection"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_e: [{
-          point_a: "#Governance_and_Ecosystem "},
-          {ponit_a: "#Protection"},
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Asset Management",
+          },
+          { point_a: "#Information_protection" },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem ",
+          },
+          { point_a: "#Protection" },
         ],
       },
     },
@@ -309,23 +401,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-         { ponit_a: "#Integrity"},
-          {ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Protect",
-        }],
-        td_d:[ {
-          point_a: "#Asset Management",
-        }],
-        td_e:[ {
-          point_a: "#Protection",
-        }],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Asset Management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
       },
     },
     {
@@ -336,23 +438,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c:[ {
-          point_a: "#Identify",
-        }],
-        td_d: [{
-          point_a: "#Information_protection",
-        }],
-        td_e:[ {
-          point_a: "# Protection"},
-          {ponit_a: "#Defence"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_protection",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "# Protection",
+          },
+          { point_a: "#Defence" },
         ],
       },
     },
@@ -364,23 +476,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a:[ {
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-         { ponit_a: "#Integrity"},
-          {ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Identify",
-        }],
-        td_d:[ {
-          point_a: "#Information_protection",
-        }],
-        td_e:[ {
-          point_a: "#Defence"},
-          {ponit_a: "#Protection "},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_protection",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+          { point_a: "#Protection " },
         ],
       },
     },
@@ -392,24 +514,34 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c:[ {
-          point_a: "#Protect",
-        }],
-        td_d: [{
-          point_a: "#Asset Management"},
-          {ponit_a: "#Information_Protection "},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_e: [{
-          point_a: "#Protection",
-        }],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Asset Management",
+          },
+          { point_a: "#Information_Protection " },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
       },
     },
     {
@@ -420,23 +552,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b:[ {
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Protect",
-        }],
-        td_d:[ {
-          point_a: "#Identity_and_access_management",
-        }],
-        td_e: [{
-          point_a: "#Protection",
-        }],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Identity_and_access_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
       },
     },
     {
@@ -447,23 +589,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c:[ {
-          point_a: "#Protect",
-        }],
-        td_d:[ {
-          point_a: "#Identity_and_access_management",
-        }],
-        td_e: [{
-          point_a: "#Protection",
-        }],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Identity_and_access_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
       },
     },
     {
@@ -474,23 +626,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Protect",
-        }],
-        td_d:[ {
-          point_a: "#Identity_and_access_management",
-        }],
-        td_e:[ {
-          point_a: "#Protection",
-        }],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Identity_and_access_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
       },
     },
     {
@@ -501,23 +663,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Protect",
-        }],
-        td_d:[ {
-          point_a: "#Identity_and_access_management",
-        }],
-        td_e: [{
-          point_a: "#Protection",
-        }],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Identity_and_access_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
       },
     },
     {
@@ -528,23 +700,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c:[ {
-          point_a: "#Protect",
-        }],
-        td_d:[ {
-          point_a: "#Identity_and_access_management",
-        }],
-        td_e: [{
-          point_a: "#Protection",
-        }],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Identity_and_access_management",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
       },
     },
     {
@@ -555,24 +737,34 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a:[ {
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Identify",
-        }],
-        td_d:[ {
-          point_a: "#Supplier_relationships_security",
-        }],
-        td_e:[ {
-          point_a: "#Governance_and_ Ecosystem",
-          ponit_a: "#Protection",
-        }],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Supplier_relationships_security",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_ Ecosystem",
+            point_a: "#Protection",
+          },
+        ],
       },
     },
     {
@@ -583,23 +775,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c:[ {
-          point_a: "#Identify",
-        }],
-        td_d:[ {
-          point_a: "#Supplier_relationships_security",
-        }],
-        td_e: [{
-          point_a: "#Governance_and_ Ecosystem"},
-        {  ponit_a: "#Protection"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Supplier_relationships_security",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_ Ecosystem",
+          },
+          { point_a: "#Protection" },
         ],
       },
     },
@@ -612,25 +814,35 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a:[ {
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Identify",
-        }],
-        td_d: [{
-          point_a: "#Supplier_relationships_security",
-        }],
-        td_e:[ {
-          point_a: "#Governance_and_ Ecosystem"},
-          {ponit_a: "#Protection"},
-          {ponit_a: "#Defence"},
-         { point_a: "#Information_security_assurance"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Supplier_relationships_security",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_ Ecosystem",
+          },
+          { point_a: "#Protection" },
+          { point_a: "#Defence" },
+          { point_a: "#Information_security_assurance" },
         ],
       },
     },
@@ -643,23 +855,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a:[ {
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Protect",
-        }],
-        td_d:[ {
-          point_a: "#Supplier_relationships_security",
-        }],
-        td_e:[ {
-          point_a: "#Governance_and_ Ecosystem"},
-         { ponit_a: "#Protection"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Supplier_relationships_security",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_ Ecosystem",
+          },
+          { point_a: "#Protection" },
         ],
       },
     },
@@ -672,25 +894,35 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Corrective",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Corrective",
+          },
         ],
-        td_c:[ {
-          point_a: "#Respond "},
-          {ponit_a: "#Recover "},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_d: [{
-          point_a: "#Governance"},
-         { ponit_a: "#Information_security_event_management "},
+        td_c: [
+          {
+            point_a: "#Respond ",
+          },
+          { point_a: "#Recover " },
         ],
-        td_e: [{
-          point_a: "#Defence",
-        }],
+        td_d: [
+          {
+            point_a: "#Governance",
+          },
+          { point_a: "#Information_security_event_management " },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+        ],
       },
     },
     {
@@ -701,24 +933,34 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a:[ {
-          point_a: "#Detective",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Detective",
+          },
         ],
-        td_c: [{
-          point_a: "#Detect"},
-          {ponit_a: "#Respond"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_d: [{
-          point_a: "#Information_security_event_management ",
-        }],
-        td_e:[ {
-          point_a: "#Defence",
-        }],
+        td_c: [
+          {
+            point_a: "#Detect",
+          },
+          { point_a: "#Respond" },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_security_event_management ",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+        ],
       },
     },
     {
@@ -729,24 +971,34 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Corrective",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Corrective",
+          },
         ],
-        td_c:[ {
-          point_a: "#Respond"},
-         { ponit_a: "#Recover"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_d: [{
-          point_a: "#Information_security_event_management ",
-        }],
-        td_e:[ {
-          point_a: "#Defence",
-        }],
+        td_c: [
+          {
+            point_a: "#Respond",
+          },
+          { point_a: "#Recover" },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_security_event_management ",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+        ],
       },
     },
     {
@@ -757,24 +1009,34 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c:[ {
-          point_a: "#Identify"},
-          {ponit_a: "#Protect"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_d: [{
-          point_a: "#Information_security_event_management ",
-        }],
-        td_e: [{
-          point_a: "#Defence",
-        }],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "#Protect" },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_security_event_management ",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+        ],
       },
     },
     {
@@ -785,24 +1047,34 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Corrective",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Corrective",
+          },
         ],
-        td_c: [{
-          point_a: "#Detect"},
-          {ponit_a: "#Respond"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_d: [{
-          point_a: "#Information_security_event_management ",
-        }],
-        td_e:[ {
-          point_a: "#Defence",
-        }],
+        td_c: [
+          {
+            point_a: "#Detect",
+          },
+          { point_a: "#Respond" },
+        ],
+        td_d: [
+          {
+            point_a: "#Information_security_event_management ",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+        ],
       },
     },
     {
@@ -813,23 +1085,34 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive"}],
-          td_b: [{
-            point_a: "#confidentiality"},
-            {ponit_a: "#Integrity"},
-           { ponit_a: "#Availibilty"},
-          ],
-        td_c:[ {
-          point_a: "#Protect"},
-          {ponit_a: "#Respond"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_d: [{
-          point_a: "#Continuity",
-        }],
-        td_e:[ {
-          point_a: "#Protection"},
-          {point_a: "#Resilience"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+          { point_a: "#Respond" },
+        ],
+        td_d: [
+          {
+            point_a: "#Continuity",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+          { point_a: "#Resilience" },
         ],
       },
     },
@@ -841,21 +1124,31 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Corrective",
-        }],
-        td_b:[ {
-          point_a: "#Availibilty",
-        }],
-        td_c: [{
-          point_a: "#Respond",
-        }],
-        td_d:[ {
-          point_a: "#Continuity",
-        }],
-        td_e:[ {
-          point_a: "#Resilience",
-        }],
+        td_a: [
+          {
+            point_a: "#Corrective",
+          },
+        ],
+        td_b: [
+          {
+            point_a: "#Availibilty",
+          },
+        ],
+        td_c: [
+          {
+            point_a: "#Respond",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Continuity",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Resilience",
+          },
+        ],
       },
     },
     {
@@ -866,23 +1159,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a:[ {
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Identify",
-        }],
-        td_d:[ {
-          point_a: "#Legal_and_compliance",
-        }],
-        td_e:[ {
-          point_a: "#Governance_and_Ecosystem"},
-          {ponit_a: "#Protection"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Legal_and_compliance",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+          { point_a: "#Protection" },
         ],
       },
     },
@@ -894,23 +1197,33 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c:[ {
-          point_a: "#Identify",
-        }],
-        td_d:[ {
-          point_a: "#Legal_and_compliance",
-        }],
-        td_e:[ {
-          point_a: "#Governance_and_Ecosystem",
-        }],
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
+        ],
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+        ],
+        td_d: [
+          {
+            point_a: "#Legal_and_compliance",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+        ],
       },
     },
     {
@@ -921,26 +1234,36 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a:[ {
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c:[ {
-          point_a: "#Identify"},
-          {ponit_a: "Protect"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_d: [{
-          point_a: "#Legal_and_compliance"},
-          {ponit_a: "#Asset_management"},
-         { ponit_a: "#nformation_protection"},
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "Protect" },
         ],
-        td_e: [{
-          point_a: "#Defence",
-        }],
+        td_d: [
+          {
+            point_a: "#Legal_and_compliance",
+          },
+          { point_a: "#Asset_management" },
+          { point_a: "#nformation_protection" },
+        ],
+        td_e: [
+          {
+            point_a: "#Defence",
+          },
+        ],
       },
     },
     {
@@ -951,25 +1274,35 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c:[ {
-          point_a: "#Identify"},
-          {ponit_a: "Protect"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_d:[ {
-          point_a: "#nformation_protection"},
-         { ponit_a: "#Legal_and_compliance"},
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "Protect" },
         ],
-        td_e: [{
-          point_a: "#Protection",
-        }],
+        td_d: [
+          {
+            point_a: "#nformation_protection",
+          },
+          { point_a: "#Legal_and_compliance" },
+        ],
+        td_e: [
+          {
+            point_a: "#Protection",
+          },
+        ],
       },
     },
     {
@@ -980,25 +1313,35 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive"},
-         { ponit_a: "#Corrective"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Corrective" },
         ],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_c: [{
-          point_a: "#Identify"},
-          {ponit_a: "Protect"},
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "Protect" },
         ],
-        td_d:[ {
-          point_a: "#Information_security_assurance",
-        }],
-        td_e:[ {
-          point_a: "#Governance_and_Ecosystem",
-        }],
+        td_d: [
+          {
+            point_a: "#Information_security_assurance",
+          },
+        ],
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+        ],
       },
     },
     {
@@ -1010,21 +1353,29 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a: [{
-          point_a: "#Preventive",
-        }],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
         ],
-        td_c: [{
-          point_a: "#Identify"},
-          {ponit_a: "Protect"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_d: [{
-          point_a: "#Legal_and_compliance"},
-          {ponit_a: "#Information_security_assurance"},
+        td_c: [
+          {
+            point_a: "#Identify",
+          },
+          { point_a: "Protect" },
+        ],
+        td_d: [
+          {
+            point_a: "#Legal_and_compliance",
+          },
+          { point_a: "#Information_security_assurance" },
         ],
         td_e: {},
       },
@@ -1037,47 +1388,51 @@ export default function CompA5() {
       files: [],
       color: false,
       help_data: {
-        td_a:[ {
-          point_a: "#Preventive"},
-          {ponit_a: "#Corrective"},
+        td_a: [
+          {
+            point_a: "#Preventive",
+          },
+          { point_a: "#Corrective" },
         ],
-        td_b: [{
-          point_a: "#confidentiality"},
-          {ponit_a: "#Integrity"},
-         { ponit_a: "#Availibilty"},
+        td_b: [
+          {
+            point_a: "#confidentiality",
+          },
+          { point_a: "#Integrity" },
+          { point_a: "#Availibilty" },
         ],
-        td_c: [{
-          point_a: "#Protect"},
-          {ponit_a: "#Recover"},
+        td_c: [
+          {
+            point_a: "#Protect",
+          },
+          { point_a: "#Recover" },
         ],
-        td_d: [{
-          point_a: "#Asset_management"},
-          {ponit_a: "#Physical_security"},
-         { ponit_a: "#System_and_network_security"},
-         { point_a: "#Application_security"},
-         { point_a: "#Secure_configuration"},
-         { point_a: "#Identity_and_access_management"},
-         { point_a: "#Treat_and_vulnerability_management"},
-         { point_a: "#Continuity"},
-         { point_a: "#Information_security_event_management"},
+        td_d: [
+          {
+            point_a: "#Asset_management",
+          },
+          { point_a: "#Physical_security" },
+          { point_a: "#System_and_network_security" },
+          { point_a: "#Application_security" },
+          { point_a: "#Secure_configuration" },
+          { point_a: "#Identity_and_access_management" },
+          { point_a: "#Treat_and_vulnerability_management" },
+          { point_a: "#Continuity" },
+          { point_a: "#Information_security_event_management" },
         ],
-        td_e: [{
-          point_a: "#Governance_and_Ecosystem"},
-          {ponit_a: "#Protection"},
-         { ponit_a: "#Defence"},
+        td_e: [
+          {
+            point_a: "#Governance_and_Ecosystem",
+          },
+          { point_a: "#Protection" },
+          { point_a: "#Defence" },
         ],
       },
     },
   ];
-  const cc = {
-    srNo: 5.1,
-    controller: "Policies for \\n information security",
-  };
-  const b = cc.controller.replace("\\n", `</br>`);
   // document.getElementById("data").innerHTML = `Controller: ${b}`;
 
   const [controlerA5, setControlerA5] = useState(A5);
-  console.log("controlerA5", controlerA5);
   const [modalShow, setModalShow] = useState(false);
   const [show, setShow] = useState(true);
   const [data, setdata] = useState({});
@@ -1163,7 +1518,6 @@ export default function CompA5() {
           </div>
           <div className={`${show ? "d-none" : "d-block"}`}>
             <div className={`table-resposive overflow-auto bg-graye`}>
-
               {controlerA5.map((el, index) => (
                 <table key={index}>
                   <tr className={`${el.color ? "green" : ""}`}>
@@ -1260,7 +1614,7 @@ export default function CompA5() {
       {/******************* Help Modal ************************** */}
       <Modal show={modalShow} size="lg" onHide={handleClose} animation={false}>
         <Modal.Header className="border-0" closeButton>
-        <Modal.Title>Help</Modal.Title>
+          <Modal.Title>Help</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <HelpModal data={data} />
